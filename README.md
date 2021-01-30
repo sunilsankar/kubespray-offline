@@ -1,15 +1,16 @@
 # kubespray-offline
-1. Copy to root directory
 
-`cp /root/kubespray-offline/packages.tgz /root/`
-
-2. untar the folder
+1. untar the folder
 
 `tar -zxvf kubespray-offline.tgz`
 
+2. Copy to root directory
+
+`cp /root/kubespray-offline/packages.tgz /root/`
+
 3. Change the permission
 
-`chmod 755 /root/
+`tar -zxvf /root/packages.tgz && chmod 755 /root/
 && chmod -R 755 /root/packages`
 
 4. add the line in /etc/apt/sources.list
@@ -53,7 +54,7 @@
 
 `systemctl restart docker && systemctl enable docker`
 
-> Please follow 7,8,9,10,11 steps in all the worker nodes
+> Please follow 7,8,9,10,11 steps in all the kubernetes nodes
 
 12. Now in master node , need to install the necessary pip modules
 
