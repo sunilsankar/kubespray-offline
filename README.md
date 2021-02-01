@@ -214,7 +214,7 @@ docker_ubuntu_repo_gpgkey: "{{ files_repo }}/docker-ce/gpg"
 20. Run the Ansibe playbook now
 
 `
- ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml -u ubuntu s--private-key <path to the private key>
+ ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml -u ubuntu --private-key <path to the private key>
 `
 
 21. Validation whether the cluster is working fine
